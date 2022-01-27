@@ -27,7 +27,7 @@
     <!-- <include file="$(find eurobot)/launch/localization/localization.launch"/> -->
 
     <!-- Obstacle detector -->
-    <!-- <include file="$(find obstacle_detector)/launch/nodes.launch"/> -->
+    <include file="$(find obstacle_detector)/launch/eurobot_beacon.launch"/>
     <!-- rviz -->
 	<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d /home/sunfu/eurobot_ros_ws/rviz/lidar_nav.rviz"/> -->
 </launch>
