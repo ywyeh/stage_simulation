@@ -57,6 +57,13 @@ define laser ranger
   )
 )
 
+obstacle
+(
+  name "nooooooob"
+  size [0.5 0.5 1.75]
+  pose [ 1 2 0 0]
+)
+
 reflect
 (
   name "beacon"
