@@ -25,6 +25,7 @@
     <node type="rviz" name="rviz" pkg="rviz" args="-d $(find stage_simulation)/rviz/stage.rviz" />
 
     <!-- localization -->
+    <node pkg="eurobot_localization" type="ekf" name="ekf_localization" output="screen"/>
     <!-- <include file="$(find eurobot)/launch/localization/localization.launch"/> -->
 
     <!-- Obstacle detector -->
