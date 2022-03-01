@@ -59,10 +59,17 @@ define laser ranger
 
 obstacle
 (
-  name "nooooooob"
+  name "beacon_noise"
   bitmap "../maps/eurobot_map_hdpi/beacon_noise.png"
   size [4 5 2]
   pose [1 1.5 0.0 0.0]
+)
+
+obstacle
+(
+  name "nooooooob"
+  size [0.5 0.5 1.75]
+  pose [ 1 2 0 0]
 )
 
 reflect
