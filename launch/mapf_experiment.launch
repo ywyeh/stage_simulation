@@ -19,8 +19,8 @@
 
     <group ns="robot_0">
         <param name="initial_x" type="double" value="2.0"/>
-		<param name="initial_y" type="double" value="0.25"/>
-		<param name="initial_theta" type="double" value="90.0"/>
+		<param name="initial_y" type="double" value="4.5"/>
+		<param name="initial_theta" type="double" value="-90.0"/>
 		<param name="robot_name" value="robot_0" />
 
         <node pkg="stage_simulation" type="ground_truth.py" name="pub_ground_truth" output="screen"/>
@@ -38,8 +38,8 @@
 
     <group ns="robot_1">
         <param name="initial_x" type="double" value="2.0"/>
-		<param name="initial_y" type="double" value="4.75"/>
-		<param name="initial_theta" type="double" value="-90.0"/>
+		<param name="initial_y" type="double" value="0.5"/>
+		<param name="initial_theta" type="double" value="90.0"/>
 		<param name="robot_name" value="robot_1" />
 
         <node pkg="stage_simulation" type="ground_truth.py" name="pub_ground_truth" output="screen"/>

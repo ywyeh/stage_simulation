@@ -85,8 +85,8 @@ diff_drive_robot
 (
   name "robot0"
   color "red"
-  size [ 0.40 0.40 0.40 ]
-  pose [ 2.0 0.25 0.0 90.0 ]
+  size [ 0.30 0.30 0.40 ]
+  pose [ 2.0 4.5 0.0 -90.0 ]
   odom_error [0.1 0.1 0 0.1]
   laser(
     pose [0 0 0.5 0]
@@ -97,8 +97,8 @@ diff_drive_robot
 (
   name "robot1"
   color "blue"
-  size [ 0.40 0.40 0.40 ]
-  pose [ 2.0 4.75 0.0 -90.0 ]
+  size [ 0.30 0.30 0.40 ]
+  pose [ 2.0 0.5 0.0 90.0 ]
   odom_error [0.1 0.1 0 0.1]
   laser(
     pose [0 0 0.5 0]
