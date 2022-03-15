@@ -59,26 +59,26 @@ define laser ranger
 
 obstacle
 (
-  name "beacon_noise"
+  name "obstacle_wall"
   bitmap "../maps/mapf_experiment/obstacle_wall.png"
-  size [4 0.5 2]
-  pose [2 2.5 0.0 0.0]
+  size [2 0.5 2]
+  pose [1 2.5 0.0 0.0]
 )
 
 reflect
 (
   name "beacon"
   bitmap "../maps/mapf_experiment/beacon.png"
-  size [4 5.3 2]
-  pose [2 2.5 0.0 0.0]
+  size [2 5.3 2]
+  pose [1 2.5 0.0 0.0]
 )
 
 transparent
 (
   name "wall"
   bitmap "../maps/mapf_experiment/wall.png"
-  size [4 5 0.1]
-  pose [2 2.5 0.0 0.0]
+  size [2 5 0.1]
+  pose [1 2.5 0.0 0.0]
 )
 
 diff_drive_robot
@@ -86,7 +86,7 @@ diff_drive_robot
   name "robot0"
   color "red"
   size [ 0.30 0.30 0.40 ]
-  pose [ 2.0 4.5 0.0 -90.0 ]
+  pose [ 1.0 4.5 0.0 -90.0 ]
   odom_error [0.1 0.1 0 0.1]
   laser(
     pose [0 0 0.5 0]
@@ -98,7 +98,7 @@ diff_drive_robot
   name "robot1"
   color "blue"
   size [ 0.30 0.30 0.40 ]
-  pose [ 2.0 0.5 0.0 90.0 ]
+  pose [ 1.0 0.5 0.0 90.0 ]
   odom_error [0.1 0.1 0 0.1]
   laser(
     pose [0 0 0.5 0]
@@ -107,10 +107,10 @@ diff_drive_robot
 
 window
 (
-  size [ 500 600 ]
+  size [ 300 600 ]
 
   # camera options
-  center [ 2 2.5 ]
+  center [ 1 2.5 ]
   rotate [ 0 0 ]
   scale 100
 

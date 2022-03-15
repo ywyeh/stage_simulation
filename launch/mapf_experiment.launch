@@ -18,7 +18,7 @@
     <node type="rviz" name="rviz" pkg="rviz" args="-d $(find stage_simulation)/rviz/stage_dual_robot.rviz" />
 
     <group ns="robot_0">
-        <param name="initial_x" type="double" value="2.0"/>
+        <param name="initial_x" type="double" value="1.0"/>
 		<param name="initial_y" type="double" value="4.5"/>
 		<param name="initial_theta" type="double" value="-90.0"/>
 		<param name="robot_name" value="robot_0" />
@@ -37,7 +37,7 @@
     </group>
 
     <group ns="robot_1">
-        <param name="initial_x" type="double" value="2.0"/>
+        <param name="initial_x" type="double" value="1.0"/>
 		<param name="initial_y" type="double" value="0.5"/>
 		<param name="initial_theta" type="double" value="90.0"/>
 		<param name="robot_name" value="robot_1" />
