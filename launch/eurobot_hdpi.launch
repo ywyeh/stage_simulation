@@ -1,5 +1,6 @@
 <launch>
-    <!-- <param name="/use_sim_time" value="true"/> -->
+    <arg name="rviz_file" default="$(find stage_simulation)/rviz/stage.rviz" />
+
     <param name="use_sim_time" value="true"/>
     <!-- map -->
     <!-- <node name="map_to_beacon" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 1 map beacon_map"/>
@@ -16,17 +17,17 @@
 
     <!-- map -->
     <!-- <node name="map_odom" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 1 map odom"/> -->
-    <arg name="map_file" default="$(find stage_simulation)/maps/eurobot_map_hdpi/empty_map.yaml"/>
+    <arg name="map_file" default="$(find stage_simulation)/maps/eurobot_map_hdpi/wall.yaml"/>
     
     <!-- Run the map server -->
-    <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" /> -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
     <!-- rviz -->
-    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find stage_simulation)/rviz/stage.rviz" />
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(arg rviz_file)" />
 
     <!-- localization -->
     <!-- <node pkg="eurobot_localization" type="ekf" name="ekf_localization" output="screen"/> -->
-    <!-- <include file="$(find eurobot)/launch/localization/localization.launch"/> -->
+    <include file="$(find eurobot_localization)/launch/ekf_stage.launch"/>
 
     <!-- Obstacle detector -->
     <include file="$(find obstacle_detector)/launch/eurobot_beacon_stage.launch"/>
