@@ -1,4 +1,4 @@
-resolution 0.001
+resolution 0.01
 interval_sim 20
 thread 4
 
@@ -59,23 +59,16 @@ define laser ranger
 
 obstacle
 (
-  name "beacon_noise"
-  bitmap "../maps/eurobot_map_hdpi/beacon_noise.png"
-  size [4 5 2]
+  name "eurobot_scenario_2019"
+  bitmap "../maps/eurobot_scenario/eurobot_2019_obstacles.png"
+  size [2 2.1 0.3]
   pose [1 1.5 0.0 0.0]
-)
-
-obstacle
-(
-  name "nooooooob"
-  size [0.5 0.5 1.75]
-  pose [ -1 -2 0 0]
 )
 
 reflect
 (
   name "beacon"
-  bitmap "../maps/eurobot_map_hdpi/beacon.png"
+  bitmap "../maps/eurobot_scenario/beacon.png"
   size [2 3.3 2]
   pose [1 1.5 0.0 0.0]
 )
@@ -83,7 +76,7 @@ reflect
 transparent
 (
   name "wall"
-  bitmap "../maps/eurobot_map_hdpi/wall.png"
+  bitmap "../maps/eurobot_scenario/wall.png"
   size [2 3 0.1]
   pose [1 1.5 0.0 0.0]
 )
