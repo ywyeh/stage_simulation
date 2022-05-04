@@ -65,6 +65,13 @@ obstacle
   pose [1 1.5 0.0 0.0]
 )
 
+obstacle
+(
+  name "square"
+  size [0.5 0.5 2]
+  pose [1 1.5 0.0 0.0]
+)
+
 reflect
 (
   name "beacon"
