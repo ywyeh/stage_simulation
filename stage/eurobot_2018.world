@@ -71,6 +71,12 @@ obstacle
   size [0.15 0.15 2]
   pose [0.5 1.0 0.0 0.0]
 )
+obstacle
+(
+  name "square"
+  size [0.15 0.15 2]
+  pose [0.5 1.0 0.0 0.0]
+)
 
 reflect
 (
@@ -102,12 +108,12 @@ diff_drive_robot
 
 window
 (
-  size [ 600 600 ]
+  size [ 600 800 ]
 
   # camera options
   center [ 1 1.5 ]
   rotate [ 0 0 ]
-  scale 100
+  scale 200
 
   # GUI options
   show_blocks 1
