@@ -50,7 +50,7 @@ define laser ranger
 
 define diff_drive_robot position
 (
-  size [ 0.25 0.25 0.40 ]
+  size [ 0.2 0.2 0.40 ]
   drive "diff"
   localization "odom"
   localization_origin [0 0 0 0]
