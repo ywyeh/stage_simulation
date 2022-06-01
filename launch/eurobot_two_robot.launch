@@ -10,7 +10,7 @@
         <remap from="/robot_0/base_scan" to="/robot_0/scan"/>
         <remap from="/robot_1/base_scan" to="/robot_1/scan"/>
     </node>
-    <node pkg="stage_simulation" type="ground_truth.py" name="pub_ground_truth" output="screen"/>
+    <!-- <node pkg="stage_simulation" type="ground_truth.py" name="pub_ground_truth" output="screen"/> -->
     
     <!-- Run the map server -->
     <node name="map_server" pkg="map_server" type="map_server" args="$(find stage_simulation)/maps/eurobot_scenario/$(arg map_name).yaml" />
