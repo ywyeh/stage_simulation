@@ -64,8 +64,8 @@ obstacle
 (
   name "eurobot_scenario_2018"
   bitmap "../maps/eurobot_scenario/eurobot_2018_obstacles.png"
-  size [1.1 3 0.2]
-  pose [1.45 1.5 0.0 0.0]
+  size [1.51 3 0.2]
+  pose [1.245 1.5 0.0 0.0]
 )
 
 obstacle
@@ -94,7 +94,7 @@ transparent
 diff_drive_robot
 (
   color "red"
-  pose [ 0.5 0.5 0.0 90.0 ]
+  pose [ 0.4 0.4 0.0 90.0 ]
 )
 
 window
