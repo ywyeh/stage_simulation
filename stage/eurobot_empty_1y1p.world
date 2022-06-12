@@ -60,14 +60,6 @@ define diff_drive_robot position
   laser(pose [0.0 0.0 -0.1 0.0])
 )
 
-obstacle
-(
-  name "eurobot_scenario_2018"
-  bitmap "../maps/eurobot_scenario/eurobot_2018_obstacles.png"
-  size [1.51 3 0.2]
-  pose [1.245 1.5 0.0 0.0]
-)
-
 reflect
 (
   name "beacon"
@@ -87,7 +79,13 @@ transparent
 diff_drive_robot
 (
   color "purple"
-  pose [ 1.85 0.15 0.0 90.0 ]
+  pose [ 1.0 0.3 0.0 90.0 ]
+)
+
+diff_drive_robot
+(
+  color "yellow"
+  pose [ 1.0 2.7 0.0 -90.0 ]
 )
 
 window
