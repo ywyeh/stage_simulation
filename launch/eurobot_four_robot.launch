@@ -1,0 +1,23 @@
+<launch>
+    <arg name="rviz_file" default="$(find stage_simulation)/rviz/stage.rviz" />
+    <arg name="map_name" />
+    <arg name="scenario" />
+
+    <param name="use_sim_time" value="true"/>
+
+    <!-- stage -->
+    <node pkg="stage_ros" type="stageros" name="stageros" args="$(find stage_simulation)/stage/$(arg map_name)$(arg scenario).world" output="screen">
+        <remap from="/robot_0/base_scan" to="/robot_0/scan"/>
+        <remap from="/robot_1/base_scan" to="/robot_1/scan"/>
+        <remap from="/robot_2/base_scan" to="/robot_2/scan"/>
+        <remap from="/robot_3/base_scan" to="/robot_3/scan"/>
+    </node>
+    <!-- <node pkg="stage_simulation" type="ground_truth.py" name="pub_ground_truth" output="screen"/> -->
+    
+    <!-- Run the map server -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find stage_simulation)/maps/eurobot_scenario/$(arg map_name).yaml" />
+
+    <!-- rviz -->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(arg rviz_file)" />
+    
+</launch>
